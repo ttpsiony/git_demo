@@ -20,4 +20,4 @@ git push -u origin master
 >
 > git commit -m 'commit message' 寫這次變更的註解
 >
-> git push origin branchName  推送(同步)到遠端
+> git push origin branchName 推送(同步)到遠端

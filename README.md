@@ -20,3 +20,5 @@ git push -u origin master
 > **git merge branchName** : 合併分支  
 > **git pull** : 同步遠端分支的內容到本地端分支  
 > **git push origin branchName** : 推送(同步)到遠端
+
+> remote

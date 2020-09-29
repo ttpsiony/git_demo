@@ -13,7 +13,7 @@ git push -u origin master
 ```
 
 > **echo "file content" >> fileName** : 新增 內容為"file content" 的 fileName 檔案     
-> **git rm** : 刪除檔案        
+> **git rm fileName** : 刪除檔案 ????       
 > **mkdir folderName** : 建立folder   
 > **git branch -M master** : 建立新分支   
 > **git branch (-r, -a)** : 查看所有本地分支 (遠端分支, 全部分支)   
@@ -22,7 +22,6 @@ git push -u origin master
 > **git checkout -b branchName origin/branchName** : 從遠端複製分支      
 > **git switch branchName** : 切換分支  
 > **git add .** : 確認所有變更(git add --all 類似) 或 可以選擇特定檔案(git add fileName)  
-> **git rm fileName** : 刪除檔案 ????   
 > **git commit -m 'commit message'** : 寫這次變更的註解  
 > **git merge branchName** : 合併分支   
 > **git pull** : 同步遠端分支的內容到本地端分支   

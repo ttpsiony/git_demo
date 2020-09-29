@@ -27,6 +27,5 @@ git push -u origin master
 > **git pull** : 同步遠端分支的內容到本地端分支   
 > **git push origin branchName** : 推送(同步)到遠端   
 > **git status (-s)** : 查看分支狀態 (查看已修改的檔案名稱)  
-> **git checkout -b branchName origin/branchName** : 從遠端複製分支       
-> **git rm fileName** : 刪除檔案 
-加上 origin 代表遠端
+> **git checkout -b branchName origin/branchName** : 從遠端複製分支      
+

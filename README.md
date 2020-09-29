@@ -31,3 +31,6 @@ git push -u origin master
 > **git checkout -b branchName origin/branchName** : 從遠端複製分支       
 > **git rm fileName** : 刪除檔案 
 加上 origin 代表遠端
+
+
+abc

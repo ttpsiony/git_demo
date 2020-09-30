@@ -12,6 +12,8 @@ git remote add origin "your repository"
 git push -u origin master
 ```
 
+## basic git command line
+
 > **echo "file content" >> fileName** : 新增 內容為"file content" 的 fileName 檔案     
 > **rm fileName** : 刪除檔案       
 > **mkdir folderName** : 建立folder   
@@ -30,4 +32,5 @@ git push -u origin master
 > **git pull** : 同步遠端分支的內容到本地端分支    
 > **git push origin branchName** : 推送(同步)到遠端 或 git push 就好    
 > **git status (-s)** : 查看分支狀態 (查看已修改的檔案名稱)   
-
+  
+> **git --help** : 查看指令      

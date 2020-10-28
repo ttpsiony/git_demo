@@ -32,6 +32,7 @@ git push -u origin master
 > **git pull** : 同步遠端分支的內容到本地端分支  
 > **git push origin branchName** : 推送(同步)到遠端 或 git push 就好  
 > **git status (-s)** : 查看分支狀態 (查看已修改的檔案名稱)  
-> **git revert HEAD** : 回復最新 commit 訊息
+> **git tag (-d) tagName [-a -m 'The tag information']** : 在此 commit 加上(刪除)輕量標籤 [ 加上有附註的標籤 ]  
+> **git revert HEAD (HEAD~數字)** : 回復最新(相對於 HEAD 前，第「數字」個) commit 訊息
 
 > **git --help** : 查看指令

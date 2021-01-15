@@ -24,6 +24,7 @@ git push -u origin master
 > **git checkout branchName** : 切換分支  
 > **git checkout -b branchName** : 新創分支並切換  
 > **git checkout -b branchName origin/branchName** : 從遠端複製分支  
+> **git checkout -t origin/branchName** : 從遠端複製分支，並追蹤遠端分支  
 > **git switch branchName** : 切換分支  
 > **git add .** : 確認所有變更(git add --all 類似) 或 可以選擇特定檔案(git add fileName)  
 > **git commit -m 'commit message'** : 寫這次變更的註解  

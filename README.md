@@ -34,6 +34,8 @@ git push -u origin master
 > **git push origin branchName** : 推送(同步)到遠端 或 git push 就好  
 > **git status (-s)** : 查看分支狀態 (查看已修改的檔案名稱)  
 > **git tag (-d) tagName [-a -m 'The tag information']** : 在此 branch 的 commit 加上(刪除)輕量標籤 [ 加上有附註的標籤 ]  
+> **git push origin tagName** : 推 tagName 到 remote branch  
+> **git push --delete origin tagName** : 刪除遠端 branch tabName  
 > **git revert HEAD (HEAD~數字)** : 回復最新(相對於 HEAD 前，第「數字」個) commit 訊息  
 > **git cherry-pick (commit1 commit2...) [-no-commit ]** : 選取分支合併，[ 只是放到暫存區 ]  
 > **git log**: 查看分支 commit 紀錄  

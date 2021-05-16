@@ -29,7 +29,7 @@ git push -u origin master
 > **git add .** : 確認所有變更(git add --all 類似) 或 可以選擇特定檔案(git add fileName)  
 > **git commit -m 'commit message'** : 寫這次變更的註解  
 > **git merge branchName** : 合併分支  
-> **git rebase branchName** : 在當前分支同步 branchName 的最後一個 commit 訊息  
+> **git rebase branchName** : 在當前分支同步 branchName 的最後一個 commit 訊息 並接續當前分支的 commit 訊息後合併 branchName  
 > **git fetch** : 檢查 遠端分支狀態  
 > **git pull** : 同步遠端分支的內容到本地端分支  
 > **git push origin branchName** : 推送(同步)到遠端 或 git push 就好  

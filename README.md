@@ -33,11 +33,10 @@ git push -u origin master
 > **git fetch** : 檢查 遠端分支狀態  
 > **git pull** : 同步遠端分支的內容到本地端分支  
 > **git push origin branchName** : 推送(同步)到遠端 或 git push 就好  
-> **git push origin --delete branchName** : 刪除遠端的 branch  
 > **git status (-s)** : 查看分支狀態 (查看已修改的檔案名稱)  
 > **git tag (-d) tagName [-a -m 'The tag information']** : 在此 branch 的 commit 加上(刪除)輕量標籤 [ 加上有附註的標籤 ]  
-> **git push origin tagName** : 推 tagName 到 remote branch  
-> **git push --delete origin tagName** : 刪除遠端 branch tabName  
+> **git push origin 'tagName'** : 推 tagName 到 remote branch  
+> **git push --delete origin 'tagName'/branchName** : 刪除遠端 branch 的 tabName / 刪除遠端的 branch  
 > **git reset --sort/--hard commitID** : 撤銷 commitID 之後的 commit 訊息 (撤銷 commit 的變更還在可重新 commit) / 撤銷 commitID 之後的 commit 訊息與變更  
 > **git revert commitID** : 回復該 commitID 的變更，並新增該次操作的 commit 訊息(但不影響其他 commit)  
 > **git cherry-pick (commit1 commit2...) [-no-commit ]** : 選取分支合併，[ 只是放到暫存區 ]  

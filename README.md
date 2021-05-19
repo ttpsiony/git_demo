@@ -12,12 +12,19 @@ git remote add origin "your repository"
 git push -u origin master
 ```
 
-## basic git command line
+## bash command line
 
 > **echo "file content" >> fileName** : 新增 內容為"file content" 的 fileName 檔案  
+> **pwd** : 查看當前位置  
+> **cd ~path(/~path)(..)(-)** : 移動至相對路徑位置(絕對路徑位置)(回上層)(回上一次操作的位置)。  
+> **mkdir folderName** : 建立 folder[directory]  
 > **rm fileName** : 刪除檔案  
-> **mkdir folderName** : 建立 folder  
 > **rm -d(-r) folderName** : 只能刪除空的 folder(刪除整個資料夾)  
+> **mv fileName ~path/fileName** : 移動檔案至路徑位置  
+> **mv fileName newFileName** : 更新檔案名稱
+
+## basic git command line
+
 > **git branch master** : 建立新分支(不切換)  
 > **git branch (-r, -a)** : 查看所有本地分支 (遠端分支, 全部分支)  
 > **git branch (-r) -d branchName** : 刪除(遠端)本地分支  

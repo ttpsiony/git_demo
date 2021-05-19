@@ -15,14 +15,16 @@ git push -u origin master
 ## bash command line
 
 > **echo "file content" >> fileName** : 新增 內容為"file content" 的 fileName 檔案  
-> **pwd** : 查看當前位置  
+> **pwd** : 查看當前位置路徑  
 > **cd ~path(/~path)(..)(-)** : 移動至相對路徑位置(絕對路徑位置)(回上層)(回上一次操作的位置)。  
 > **ls** : 查看當前路徑下的 file 與 directory  
 > **mkdir folderName** : 建立 folder[directory]  
 > **rm fileName** : 刪除檔案  
 > **rm -d(-r) folderName** : 只能刪除空的 folder(刪除整個資料夾內所有的東西 recursive)  
 > **mv fileName ~path/fileName** : 移動檔案至路徑位置  
-> **mv fileName newFileName** : 更新檔案名稱
+> **mv fileName newFileName** : 更新檔案名稱  
+> **cp fileName ~path/fileName** : 複製檔案到路徑位置  
+> **nano fileName** : 進入編輯檔案模式(也可以用 vim)
 
 ## basic git command line
 

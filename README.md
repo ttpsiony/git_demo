@@ -15,6 +15,7 @@ git push -u origin master
 ## bash command line
 
 > **echo "file content" >> fileName** : 新增 內容為"file content" 的 fileName 檔案  
+> **touch fileName** : 建立 fileName 檔案  
 > **pwd** : 查看當前位置路徑  
 > **cd ~path(/~path)(..)(-)** : 移動至相對路徑位置(絕對路徑位置)(回上層)(回上一次操作的位置)。  
 > **ls** : 查看當前路徑下的 file 與 directory  

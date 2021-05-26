@@ -25,7 +25,9 @@ git push -u origin master
 > **mv fileName ~path/fileName** : 移動檔案至路徑位置  
 > **mv fileName newFileName** : 更新檔案名稱  
 > **cp fileName ~path/fileName** : 複製檔案到路徑位置  
-> **nano fileName** : 進入編輯檔案模式(也可以用 vim)
+> **nano fileName** : 進入編輯檔案模式(也可以用 vim)  
+> **env** :  列出所有環境變數  
+> **alias e="env"** : 可以用自訂義代表該指令
 
 ## basic git command line
 

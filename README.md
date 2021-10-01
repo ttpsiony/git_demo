@@ -1,6 +1,6 @@
-# git_demo
+# git simple cheat sheet
 
-## init git repository
+## Init Git Repository
 
 ```
 echo "# git_demo" >> README.md
@@ -12,7 +12,7 @@ git remote add origin "your repository"
 git push -u origin master
 ```
 
-## bash command line
+## Bash Command Line
 
 > **echo "file content" >> fileName** : 新增 內容為"file content" 的 fileName 檔案  
 > **touch fileName** : 建立 fileName 檔案  
@@ -29,7 +29,7 @@ git push -u origin master
 > **env** :  列出所有環境變數  
 > **alias e="env"** : 可以用自訂義代表該指令
 
-## basic git command line
+## Basic Git Command Line
 
 > **git branch master** : 建立新分支(不切換)  
 > **git branch (-r, -a)** : 查看所有本地分支 (遠端分支, 全部分支)  
@@ -39,7 +39,7 @@ git push -u origin master
 > **git checkout -b branchName origin/branchName** : 從遠端複製分支  
 > **git checkout -t origin/branchName** : 從遠端複製分支，並追蹤遠端分支  
 > **git switch branchName** : 切換分支  
-> **git add .** : 確認所有變更(git add --all 類似) 或 可以選擇特定檔案(git add fileName)  
+> **git add . (-p)** : 確認所有變更(git add --all 類似) 或 可以選擇特定檔案(git add fileName)。 -p 可以選擇部分變更加到本次 commit 紀錄  
 > **git commit -m 'commit message'** : 寫這次變更的註解  
 > **git merge branchName** : 合併分支  
 > **git rebase branchName** : 在當前分支同步 branchName 的最後一個 commit 訊息 並接續當前分支的 commit 訊息後合併 branchName  
@@ -60,3 +60,25 @@ git push -u origin master
 > **git show**: 查看分支 commit 紀錄，更動內容
 
 > **git --help** : 查看指令
+
+## Commit Message
+
+- Header: <type> <subject>
+  - <type>: 代表此 commit 類型，如：feat, fix, refactor, test, chore, revert 等。
+  - <subject>: 代表此 commit 簡短描述
+
+> **feat** : 為新增或修改功能時  
+> **fix** : 為修  補功能錯誤(bug)時  
+> **refactor** : 重構程式碼架構(不是修增或修補功能時)  
+> **test** : 增加測試時  
+> **chore** : 建構程序或輔助工具時(例如：新增 release 版本紀錄、更新程式執行環境、升級套件版本 )  
+> **revert** : 撤銷先前 commit 紀錄時  
+> **docs** : 撰寫文件時(例如：新增、移除註解)  
+> **style** : 格式改變但不影響程式變動(例如：formatting、white-space)  
+> **pref** : 改善效能
+
+- Body:
+  - Body 部份是對本次 Commit 的詳細描述
+  - 可以分成多行
+
+more information: [AngularJS Git Commit Message Conventions](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#heading=h.uyo6cb12dt6w)

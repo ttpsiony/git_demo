@@ -63,9 +63,9 @@ git push -u origin master
 
 ## Commit Message
 
-- Header: <type> <subject>
-  - <type>: 代表此 commit 類型，如：feat, fix, refactor, test, chore, revert 等。
-  - <subject>: 代表此 commit 簡短描述
+- Header: `<type>` `<subject>`
+  - `<type>`: 代表此 commit 類型，如：feat, fix, refactor, test, chore, revert 等。
+  - `<subject>`: 代表此 commit 簡短描述
 
 > **feat** : 為新增或修改功能時  
 > **fix** : 為修  補功能錯誤(bug)時  

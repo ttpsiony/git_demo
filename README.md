@@ -15,10 +15,11 @@ git push -u origin master
 ## Bash Command Line
 
 > **echo "file content" >> fileName** : 新增 內容為"file content" 的 fileName 檔案  
+> **man (command)** : 查看指令的說明  
 > **touch fileName** : 建立 fileName 檔案  
 > **pwd** : 查看當前位置路徑  
-> **cd ~path(/~path)(..)(-)** : 移動至相對路徑位置(絕對路徑位置)(回上層)(回上一次操作的位置)。  
-> **ls** : 查看當前路徑下的 file 與 directory  
+> **cd ~path(/~path)(..)(-)** : 移動至相對路徑位置(絕對路徑位置)(回上層)(回上一次操作的位置)  
+> **ls (~path)(/~path) (-a) (-l)** : 查看當前路徑(相對路徑或絕對路徑)下的 file 與 directory。 -a 包含隱藏檔。-l 較多資訊  
 > **mkdir folderName** : 建立 folder[directory]  
 > **rm fileName** : 刪除檔案  
 > **rm -d(-r) folderName** : 只能刪除空的 folder(刪除整個資料夾內所有的東西 recursive)  
@@ -55,6 +56,7 @@ git push -u origin master
 > **git fetch --all -tags** : 檢查 遠端分支 tag 狀態  
 > **git reset --sort/--hard commitID** : 撤銷 commitID 之後的 commit 訊息 (撤銷 commit 的變更還在可重新 commit) / 撤銷 commitID 之後的 commit 訊息與變更  
 > **git revert commitID** : 回復該 commitID 的變更，並新增該次操作的 commit 訊息(但不影響其他 commit)  
+> **git restore . (~path/filename) (--source=HEAD~1)** : 撤銷工作區所有文件的修改 (路徑的某檔案) (將工作區內容切換到上個 commit 版本)  
 > **git cherry-pick [commit1-SHA commit2-SHA...] (-no-commit)** : 選取分支合併，(只是放到暫存區)  
 > **git log (--pretty=oneline)**: 查看分支 commit 紀錄  
 > **git reflog**: 查看分支歷史紀錄  

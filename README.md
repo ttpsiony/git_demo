@@ -58,6 +58,8 @@ git push -u origin master
 > **git revert commitID** : 回復該 commitID 的變更，並新增該次操作的 commit 訊息(但不影響其他 commit)  
 > **git restore . (~path/filename) (--source=HEAD~1)** : 撤銷工作區所有文件的修改 (路徑的某檔案) (將工作區內容切換到上個 commit 版本)  
 > **git cherry-pick [commit1-SHA commit2-SHA...] (-no-commit)** : 選取分支合併，(只是放到暫存區)  
+> **git format-patch [-n] [commit1-SHA..commit2-SHA] -o ~path**： 產生最新(n 次) (從 commit1-SHA 之後但不包含 到 commit2-SHA) 的 commit 紀錄的更新檔，到 ~path 的位置  
+> **git am ~path**： 使用 ~path 的更新檔  
 > **git log (--pretty=oneline)**: 查看分支 commit 紀錄  
 > **git reflog**: 查看分支歷史紀錄  
 > **git show**: 查看分支 commit 紀錄，更動內容

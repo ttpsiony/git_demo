@@ -60,6 +60,7 @@ git push -u origin master
 > **git cherry-pick [commit1-SHA commit2-SHA...] (-no-commit)** : 選取分支合併，(只是放到暫存區)  
 > **git format-patch [-n] [commit1-SHA..commit2-SHA] -o ~path**： 產生最新(n 次) (從 commit1-SHA 之後但不包含 到 commit2-SHA) 的 commit 紀錄的更新檔，到 ~path 的位置  
 > **git am ~path**： 使用 ~path 的更新檔  
+> **git stash (push/list/pop/apply/drop/clear) stash@{n} [save 'message']**：暫存當前目錄 push 可省略/顯示列表/還原暫存並移除暫存紀錄/還原暫存但暫存紀錄還在/清除最新暫存/清除全部暫存，指定暫存檔案的地 n 筆，預設為第一筆，save 可以寫該暫存紀錄的訊息  
 > **git log (--pretty=oneline)**: 查看分支 commit 紀錄  
 > **git reflog**: 查看分支歷史紀錄  
 > **git show**: 查看分支 commit 紀錄，更動內容

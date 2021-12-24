@@ -43,7 +43,6 @@ git push -u origin master
 > **git add . (-p)** : 確認所有變更(git add --all 類似) 或 可以選擇特定檔案(git add fileName)。 -p 可以選擇部分變更加到本次 commit 紀錄  
 > **git commit -m 'commit message'** : 寫這次變更的註解  
 > **git merge branchName** : 合併分支  
-> **git rebase branchName** : 在當前分支同步 branchName 的最後一個 commit 訊息 並接續當前分支的 commit 訊息後合併 branchName  
 > **git fetch (origin branchName)** : 檢查 遠端全部(origin branchName)分支狀態  
 > **git pull** : 同步遠端分支的內容到本地端分支  
 > **git push (-u) origin branchName** : 推送分支到遠端(並追蹤分支狀態) (-u 等同於 --set-upstream)  
@@ -56,11 +55,12 @@ git push -u origin master
 > **git fetch --all -tags** : 檢查 遠端分支 tag 狀態  
 > **git reset --sort/--hard commitID** : 撤銷 commitID 之後的 commit 訊息 (撤銷 commit 的變更還在可重新 commit) / 撤銷 commitID 之後的 commit 訊息與變更  
 > **git revert commitID** : 回復該 commitID 的變更，並新增該次操作的 commit 訊息(但不影響其他 commit)  
+> **git rebase (branchName/-i commitID)** : 改變當前分支的基準點，commit message 接續在 branchName 之後 /可以調整 commitID 之後的 commit(刪除、修改 commit message、調整順序等)  
 > **git restore . (~path/filename) (--source=HEAD~1)** : 撤銷工作區所有文件的修改 (路徑的某檔案) (將工作區內容切換到上個 commit 版本)  
 > **git cherry-pick [commit1-SHA commit2-SHA...] (-no-commit)** : 選取分支合併，(只是放到暫存區)  
 > **git format-patch [-n] [commit1-SHA..commit2-SHA] -o ~path**： 產生最新(n 次) (從 commit1-SHA 之後但不包含 到 commit2-SHA) 的 commit 紀錄的更新檔，到 ~path 的位置  
 > **git am ~path**： 使用 ~path 的更新檔  
-> **git stash (push/list/pop/apply/drop/clear) stash@{n} [save 'message']**：暫存當前目錄 push 可省略/顯示列表/還原暫存並移除暫存紀錄/還原暫存但暫存紀錄還在/清除最新暫存/清除全部暫存，指定暫存檔案的地 n 筆，預設為第一筆，save 可以寫該暫存紀錄的訊息  
+> **git stash (push/list/pop/apply/drop/clear) stash@{n} [save(-m) 'message']**：暫存當前目錄 push 可省略/顯示列表/還原暫存並移除暫存紀錄/還原暫存但暫存紀錄還在/清除最新暫存/清除全部暫存，指定暫存檔案的地 n 筆，預設為第一筆，save 可以寫該暫存紀錄的訊息  
 > **git log (--pretty=oneline)**: 查看分支 commit 紀錄  
 > **git reflog**: 查看分支歷史紀錄  
 > **git show**: 查看分支 commit 紀錄，更動內容
